@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Будка настроения - Галерея</title>
+</head>
+<body>
+    <header>
+        <h1>Будка настроения</h1>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/about/">О нас</a>
+            <a href="/login/">Войти</a>
+            <a href="/gallery/">Галерея</a>
+        </nav>
+    </header>
+    <main>
+        <div class="gallery">
+            {% for dog_image in dog_images %}
+                <img src="{{ dog_image }}" alt="Собачка">
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>

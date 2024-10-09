@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CatsAPI - Фото котов</title>
+</head>
+<body>
+    <h1>CatsAPI - Фотогалерея</h1>
+    <ul>
+        {% for cat_image in cat_images %}
+            <li><img src="{{ cat_image.image.url }}" alt="{{ cat_image.name }}"></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

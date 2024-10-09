@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Авторизация</title>
+</head>
+<body>
+    <h1>Авторизация</h1>
+            <nav>
+            <a href="/">Главная</a>
+            <a href="/about/">О нас</a>
+            <a href="/login/">Войти</a>
+            <a href="/gallery/">Галерея</a>
+        </nav>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Войти</button>
+    </form>
+</body>
+</html>
